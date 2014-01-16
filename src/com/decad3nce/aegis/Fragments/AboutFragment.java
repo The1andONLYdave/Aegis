@@ -42,13 +42,13 @@ public class AboutFragment extends Fragment {
 
                         emailIntent.setType("plain/text");
                         emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL,
-                                new String[] { "decad3nce@cyanogenmod.org" });
+                                new String[] { "the1andonlydave@gmail.com" });
                         emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
-                                "aeGis Questions");
+                                "aeGis SmartWatch Questions");
                         startActivity(Intent.createChooser(emailIntent, "Email"));
                         break;
                     case 1:
-                        url = "http://www.github.com/Decad3nce/Aegis";
+                        url = "http://www.github.com/The1andONLYdave/Aegis";
                         i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
                         startActivity(i);
@@ -96,7 +96,7 @@ public class AboutFragment extends Fragment {
         i = new Intent(Intent.ACTION_SEND);
         i.setType("text/plain");
         i.putExtra(Intent.EXTRA_SUBJECT, "aeGis");
-        String mInfo = "\nCheck out aeGis!\n\n";
+        String mInfo = "\nCheck out original aeGis!\n\n";
         mInfo = mInfo + "https://play.google.com/store/apps/details?id=com.decad3nce.aegis \n\n";
         i.putExtra(Intent.EXTRA_TEXT, mInfo);
 
